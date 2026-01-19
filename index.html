@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Jenisha 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fef6f9);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4d88;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .step {
+      display: none;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .step.active {
+      display: block;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background-color: #ff4d88;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e63976;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .question {
+      margin-top: 30px;
+      font-size: 1em;
+      background-color: #fff0f5;
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Little Journey 💖</h1>
+
+  <div class="step active" id="step1">
+    <p><strong>Step 1:</strong><br>We met. Unexpected. Unplanned. But perfect.</p>
+    <button class="btn" onclick="showNext(1)">Next</button>
+  </div>
+
+  <div class="step" id="step2">
+    <p><strong>Step 2:</strong><br>We laughed. Shared stories. Became something more.</p>
+    <button class="btn" onclick="showNext(2)">Next</button>
+  </div>
+
+  <div class="step" id="step3">
+    <p><strong>Step 3:</strong><br>I realized you’re not just part of my day—you’re the best part.</p>
+    <button class="btn" onclick="showNext(3)">Next</button>
+  </div>
+
+  <div class="step" id="step4">
+    <p><strong>Step 4:</strong><br>We went to a movie together and created memories.</p>
+    <button class="btn" onclick="showNext(4)">Next</button>
+  </div>
+
+  <div class="step" id="step5">
+    <p><strong>Step 5:</strong><br>I’ve been thinking about this moment for a long time. I didn’t want to wait anymore.</p>
+    <button class="btn" onclick="showNext(5)">Next</button>
+  </div>
+
+  <div class="step" id="step6">
+    <p><strong>Step 6:</strong><br>So here I am, asking simply and honestly:<br><br><strong>Will you be my valentine?</strong></p>
+    <button class="btn" onclick="showNext(6)">Next</button>
+  </div>
+
+  <div class="step" id="step7">
+    <div class="question">
+      💬 What’s the first moment you realized we were more than just classmates?
+    </div>
+    <div class="question">
+      💬 If you could describe us in one word, what would it be?
+    </div>
+    <div class="question">
+      💬 What’s one thing you hope we never stop doing together?
+    </div>
+    <div class="question">
+      💬 If I ever forget how much you mean to me, what would you remind me of?
+    </div>
+    <div class="question">
+      💬 Can I be your favorite hello and your hardest goodbye?
+    </div>  
+  
+<button class="btn" onclick="alert('Whatever your answers are, I’ll treasure them forever 💖')">Answer Later</button>
+  </div>
+
+  <div class="footer">
+    Made with love by Royce ✨
+  </div>
+
+  <script>
+    function showNext(currentStep) {
+      document.getElementById('step' + currentStep).classList.remove('active');
+      document.getElementById('step' + (currentStep + 1)).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
